@@ -4,7 +4,7 @@ USE proyectodb;
 
 --  Vista de los pagos totales hechos por cada cliente
 CREATE VIEW clientes_pagos AS
-SELECT c.numeroCliente, c.mombreCliente, c.contactoNombre, c.ciudad, c.limiteCredito,SUM(p.monto) AS MontoTotal
+SELECT c.numeroCliente, c.nombreCliente, c.contactoNombre, c.ciudad, c.limiteCredito,SUM(p.monto) AS MontoTotal
 FROM clientes AS c
 INNER JOIN pagos AS p
 ON c.numeroCliente = p.numeroCliente
