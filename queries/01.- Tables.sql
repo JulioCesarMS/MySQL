@@ -6,7 +6,7 @@ use proyectodb;
 -- Tabla de clientes
 CREATE TABLE `clientes` (
   `numeroCliente` int NOT NULL,
-  `mombreCliente` varchar(50) NOT NULL,
+  `nombreCliente` varchar(50) NOT NULL,
   `contactoNombre` varchar(50) NOT NULL,
   `contactoApellido` varchar(50) NOT NULL,
   `telefono` varchar(50) NOT NULL,
