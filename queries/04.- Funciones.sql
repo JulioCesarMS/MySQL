@@ -41,7 +41,7 @@ BEGIN
 	END IF;
 END; //
 
--- Observamos los registros
+-- Observamos los registros de la vista total
 SELECT cantidadOrdenada, precio, total, (SELECT AVG(total) FROM total) AS mean, clasificaCompra(total, (SELECT AVG(total) FROM total)) AS indicador
 FROM total;
 
